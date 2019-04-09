@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Link CSS File -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
 
 </head>
 
 
 <body>
-    <div id= "header-container" class= "card-header">
-        <p class= "h1 text-center">Employee Data Management</p>
-        <p class= "h3 text-center">A Comprenehsive Directory of Employee Billable Hours</p>
-    </div>
-
     <div id= "header-container" class= "card-header">
         <p class= "h1 text-center">Employee Data Management</p>
         <p class= "h3 text-center">A Comprenehsive Directory of Employee Billable Hours</p>
@@ -29,7 +27,7 @@
         </div>
         <div>
             <table class="table table-hover" id="table-employee">
-                <thead>
+                <thead id= "real-table-employee">
                     <tr>
                         <th>Employee Name</th>
                         <th>Role</th>
