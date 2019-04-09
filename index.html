@@ -15,8 +15,34 @@
 
 <body>
     <div id= "header-container" class= "card-header">
-        <p class= "h1 card text-center">Employee Data Management</p>
-        <p class= "h3 card text-center">A Comprenehsive Directory of EMployee Billable Hours</p>
+        <p class= "h1 text-center">Employee Data Management</p>
+        <p class= "h3 text-center">A Comprenehsive Directory of Employee Billable Hours</p>
+    </div>
+
+    <div id= "add-employee" class= "container-div">
+        <h2 id= "add-employee-header" class= "container-header">Add Employee</h2>
+
+        <form id= "add-employee-parameters">
+            <div class= "form-group">
+                <label for= "employee-name-input">Employee Name</label>
+                <input type= "text" class= "form-control" id="employee-name-input">
+            </div>
+
+            <div class = "form-group">
+                <label for= "role-input">Role</label>
+                <input type= "text" class= "form-control" id= "role-input">
+            </div>
+
+            <div class = "form-group">
+                <label for= "start-date-input">Start Date</label>
+                <input type= "text" class= "form-control" id= "start-date-input" placeholder= "MMDDYYYY">
+            </div>
+
+            <div class = "form-group">
+                <label for= "monthly-rate-input">Monthly Rate</label>
+                <input type= "number" class= "form-control" id= "monthly-rate-input">
+            </div>
+        </form>
     </div>
 
 </body>
