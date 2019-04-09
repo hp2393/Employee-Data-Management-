@@ -68,13 +68,23 @@ $("#add-button").on("click", function(event) {
 // --------------------------------------------------------------
 
 function printTable( employee) {
+  function convertingDates () {
+    var currentFormat = "MM/DD/YYYY";
+    var convertedDate = moment(employee.startDate, currentFormat);
+
+    return (convertedDate.diff(moment(), "months") * -1);
+  }
+
+  var difference = convertingDates();
+  console.log(difference);    
+
   var b = $("<tr>");
 
     $(b).append("<td>" + employee.name + "</td>");
     $(b).append("<td>" + employee.role + "</td>");
     $(b).append("<td>" + employee.startDate + "</td>");
     $(b).append("<td>" + employee.monthlyRate + "</td>");
-    $(b).append("<td>" + 10000000 + "</td>");
+    $(b).append("<td>" + (parseInt(employee.monthlyRate) * difference) + "</td>");
   
   $("#table-employee").append(b);
 
