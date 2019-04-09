@@ -1,0 +1,26 @@
+.current-employee{
+    margin: 20px;
+    padding: 10px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+#add-employee {
+    margin: 20px;
+    padding: 10px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+
+.jumbotron {
+	text-align: center;
+	background: navy;
+	color: white;
+}
